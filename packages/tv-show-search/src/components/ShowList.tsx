@@ -1,8 +1,8 @@
 import React from 'react';
-import { IShow } from '../services/search-show';
+import { IShow } from '@rtrocca/search-show';
 import { Loading } from './Loading';
-import { ShowCard } from './ShowCard';
-
+import { ShowCard } from '@rtrocca/show-card';
+import "@rtrocca/show-card/dist/show-card.css";
 interface IShowListProps {
     shows: IShow[];
     isLoading: boolean;

@@ -1,0 +1,45 @@
+{
+    "name":"@rtrocca/show-card",
+    "version":"0.1.0",
+    "author":"rtrocca@gmail.com",
+    "license":"MIT",
+    "main":"dist/index.js",
+    "typings":"dist/index.d.ts",
+    "files":["dist"],
+    "scripts":{
+        "start":"tsdx watch",
+        "build":"tsdx build",
+        "test":"tsdx test --env=jsdom --passWithNoTests",
+        "lint":"tsdx lint",
+        "prepare":"tsdx build"
+    },
+    "devDependencies": {
+        "@rtrocca/link-button": "^0.1.0",
+        "@rtrocca/search-show": "^0.1.0",
+        "@types/jest": "^24.0.24",
+        "husky": "^3.1.0",
+        "node-sass": "^4.13.0",
+        "rollup-plugin-postcss": "^2.0.3",
+        "tsdx": "^0.12.0",
+        "tslib": "^1.10.0",
+        "typescript": "^3.7.4"
+    },
+    "peerDependencies":{
+        "@rtrocca/link-button": "^0.1.0",
+        "@rtrocca/search-show": "^0.1.0",
+        "react":">=16"
+    },
+    "husky":{
+        "hooks":{
+            "pre-commit":"tsdx lint"
+        }
+    },
+    "prettier":{
+        "printWidth":80,
+        "semi":true,
+        "singleQuote":true,
+        "trailingComma":"es5"
+    },
+   
+    "module":"dist/show-card.esm.js"
+}

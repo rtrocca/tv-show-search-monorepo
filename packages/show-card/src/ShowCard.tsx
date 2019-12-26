@@ -1,6 +1,6 @@
 import React from 'react';
-import { IShow } from '../services/search-show';
-import { LinkButton } from './LinkButton';
+import { IShow } from '@rtrocca/search-show';
+import { LinkButton } from '@rtrocca/link-button';
 import './ShowCard.scss';
 
 export const ShowCard: React.FC<{show: IShow}> = (props) => {

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { searchShow, IShow } from './services/search-show';
+import { searchShow, IShow } from '@rtrocca/search-show';
 import { SearchBox } from './components/SearchBox';
 import { ShowList } from './components/ShowList';
 

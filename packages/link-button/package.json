@@ -1,0 +1,45 @@
+{
+    "name":"@rtrocca/link-button",
+    "version":"0.1.0",
+    "author":"rtrocca@gmail.com",
+    "license":"MIT",
+    "main":"dist/index.js",
+    "typings":"dist/index.d.ts",
+    "files":["dist"],
+    "scripts":{
+        "start":"tsdx watch",
+        "build":"tsdx build",
+        "test":"tsdx test --env=jsdom --passWithNoTests",
+        "lint":"tsdx lint",
+        "prepare":"tsdx build"
+    },
+    "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.26",
+        "@fortawesome/free-solid-svg-icons": "^5.12.0",
+        "@fortawesome/react-fontawesome": "^0.1.8",
+        "@types/jest": "^24.0.24",
+        "husky": "^3.1.0",
+        "tsdx": "^0.12.0",
+        "tslib": "^1.10.0",
+        "typescript": "^3.7.4"
+    },
+    "peerDependencies":{
+        "@fortawesome/fontawesome-svg-core": "^1.2.26",
+        "@fortawesome/free-solid-svg-icons": "^5.12.0",
+        "@fortawesome/react-fontawesome": "^0.1.8",
+        "react":">=16"
+    },
+    "husky":{
+        "hooks":{
+            "pre-commit":"tsdx lint"
+        }
+    },
+    "prettier":{
+        "printWidth":80,
+        "semi":true,
+        "singleQuote":true,
+        "trailingComma":"es5"
+    },
+   
+    "module":"dist/link-button.esm.js"
+}
