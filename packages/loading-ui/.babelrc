@@ -1,0 +1,9 @@
+{
+    "plugins": [
+      ["inline-import-data-uri", {
+        "extensions": [
+          ".gif"
+        ]
+      }]
+    ]
+  }

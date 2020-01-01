@@ -13,7 +13,7 @@ export const ShowCard: React.FC<{show: IShow}> = (props) => {
                             <img
                                 src={props.show.image}
                                 className="card-img show-cover"
-                                alt={`${props.show.name} image`}
+                                alt={`${props.show.name}`}
                             />
                         </div> :
                         <div className="col-md-3" style={{backgroundColor: "#E0E0EA"}}>
