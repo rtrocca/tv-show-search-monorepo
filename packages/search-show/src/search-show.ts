@@ -65,7 +65,7 @@ export async function searchShow(showName: string): Promise<IShow[]|null> {
     const params = new URLSearchParams();
     params.append('q', showName);
 
-    const response = await fetch(`http://api.tvmaze.com/search/shows?${params.toString()}`);
+    const response = await fetch(`https://api.tvmaze.com/search/shows?${params.toString()}`);
     if (response.ok) {
         const result = await response.json() as IShowData[];
         return  result.map( (showData) => {
